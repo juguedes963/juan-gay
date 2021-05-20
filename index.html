@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="./scripts.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Havan</title>
+    <!-- CSS only -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <div class="row" style="   
+        padding-top: 5em;
+">
+        <div class="col-md-3">
+
+        </div>
+        <div class="col-md-5">
+            <fieldset>
+                <form name="form" action="javascript:printer()" method="POST">
+                    <div class="mb-3">
+                        <label for="nameClients" class="form-label">Nome do Cliente</label>
+                        <input type="text" name="nome_cliente" class="form-control" id="nameClients"
+                            aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="money_origin" class="form-label">Moeda de Origem</label>
+                        <input type="text" name="money_origin" class="form-control" id="money_origin"/>
+                    </div>
+                    <div class="mb-3">
+                        <label for="money_destin" class="form-label">Moeda de Destino</label>
+                        <input type="text" name="money_destin" class="form-control" id="money_destin"/>
+                 
+                    </div>
+                    <div class="mb-3">
+                        <label for="dateOperation" class="form-label">Data de operação</label>
+                        <input type="date" name="dateOperation" class="form-control" id="dateOperation"/>
+                    </div>
+                    <div class="mb-3">
+                        <label for="valueOrigin" class="form-label">Valor original</label>
+                        <input type="text" name="valueOrigin" class="form-control" id="valueOrigin"/>
+                 
+                    </div>
+                    <div class="mb-3">
+                        <label for="valueConver" class="form-label">Valor convertido</label>
+                        <input type="text" name="valueConver" class="form-control" id="valueConver"/>
+                    </div>
+                    <div class="mb-3">
+                        <label for="taxa" class="form-label">Taxa cobrada</label>
+                        <input type="text" name="taxa" class="form-control" id="taxa"/>
+                    </div>
+
+                    <button type="submit" class="btn btn-success">Converter</button>
+                </form>
+            </fieldset>
+
+        </div>
+        <div class="col-md-3">
+
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
